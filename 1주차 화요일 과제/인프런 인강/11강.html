@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        body {
+            margin:0;
+            background-color:#dddddd;
+        }
+/* margin>border>padding 순 */
+        div {
+            width:200px;
+            height:200px;
+            margin:10px;
+            padding:10px;
+            border:10px solid #ff8d00;
+        }
+/* width 값은 보더 안의 요소의 크기를 결정 */
+        div:nth-child(1) {
+            margin:0;
+            border:0;
+            padding:0;
+            background-color:#ff0000;
+        }
+
+        div:nth-child(2) {
+            
+            background-color:#00ff00;
+            box-sizing:border-box;
+        }
+/* 박스 사이즈 == border-box 설정시 width값이 테두리두께를 고려함. 자주쓰임*/
+        div:nth-child(3) {
+            
+            background-color:#0000ff;
+            box-sizing:content-box;
+        }
+/* content-box는 테두리 크기 고려 x */
+    </style>
+
+</head>
+<body>
+    <div>200*200</div>
+    <div>200*200</div>
+    <div>200*200</div>
+</body>
+</html>
+
+<!-- background-attachment: fixed == 이미지를 브라우저 상단부터 시작하도록 고정
+이미지를 반복하지 않으려면 no-repeat 속성 추가,  -->
