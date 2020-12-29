@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        body div:nth-child(1) {
+            width:100px;
+            height:100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+        }
+
+        body div:nth-child(2) {
+            width:100px;
+            height:100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+        }
+
+        body div:nth-child(3) {
+            width:100px;
+            height:100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+        }
+
+        body div:nth-child(4) {
+            width:100px;
+            height:100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+        }
+
+        body div:nth-child(5) {
+            width:100px;
+            height:100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+            display:inline;
+            margin:10px 10px 10px 10px;
+        }
+        /* margin 다방향지정은 은 위부터 시계방향순으로! */
+
+        body div:nth-child(6) {
+            width:100px;
+            height:100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+            display:inline;
+        }
+        /*  */
+        body div:nth-child(7) {
+            width:100px;
+            height:100px;
+            background-color:#ff0000;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+            display:none;
+        }
+        /* none은 대상을 숨김(없애기) visibility:hidden은 공간을 차지한채 투명하게 보이게 만듦 */
+        body div:nth-child(8) {
+            width:100px;
+            height:100px;
+            background-color:#00ff00;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+            display:inline;
+        }
+        body div:nth-child(9) {
+            width:100px;
+            height:100px;
+            background-color:#0000ff;
+            color:#ffffff;
+            font-weight:bold;
+            text-align:center;
+            display:inline-block;
+        }
+        /* 인라인 블럭은 인라인+블럭 속성 둘 다 가짐. 인라인속성에서 할 수 없었던 높이, 너비 변경 및 라인 커스텀 가능
+        1. inline-block 사이에 공백이 생기게 되는데, 부모 태그에 font-size: 0를 적용하면 해결된다.
+        2. inline-block 끼리 높이가 안맞을 때 상위 공백이 생기게 되는데 vertical-align: top을 적용하면 해결할 수 있다. */
+    </style>
+
+</head>
+<body>
+<!-- div태그는 기본적으로 block 속성을 가지고 있음. 무조건 한줄을 점유하고 있음 -->
+<!-- 반면 span 태그는 text만큼 공간을 점유하고 줄바꿈을 하지않는 inline속성
+따라서 높이 너비, 마진 패딩 등등 적용 불가 -->
+    <div>
+        content1
+    </div>
+    <div>
+        content2
+    </div>
+    <div>
+        content3
+    </div>
+
+    <div>
+        content4
+    </div>
+    <div>
+        content5
+    </div>
+    <div>
+        content6
+    </div>
+    <div>
+        content7
+    </div>
+    <div>
+        content8
+    </div>
+    <div>
+        content9
+    </div>
+
+</body>
+</html>
