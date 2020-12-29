@@ -1,0 +1,38 @@
+#wrap {
+    width:800px;
+    margin:0 auto;
+}
+
+#header {
+    border-bottom:1px solid #cccccc;
+}
+/* 반응 문자 선택자 ::selection은 드래그할 시에 속성을 적용 */
+#content p:first-child::selection {
+    background-color:blue;
+    color:yellow;
+}
+
+#history2::first-letter, #history1::first-letter{
+    font-size:2em;
+/* 기본 폰트사이즈는 16px, em은 배수설정 */
+}
+/* 해당 선택자의 첫번쨰 글자를 선택 */
+#history2::first-line, #history1::first-line{
+    font-weight:bold;
+    color:#2160d1;
+}
+/* 해당 선택자의 첫번째 줄을 선택 */
+#footer ul {
+    overflow:hidden;
+    border:2px solid #cccccc;
+}
+
+#footer ul li {
+    list-style:none;
+    float:left; padding:20px;
+}
+
+/* after태그 : 태그 뒤에 위치하는 자식요소 선택 
+ before태그 : 태그 앞에 위치하는 자식요소 선택
+ 부정선택자 :not(제외할 대상 ) == 제외할 대상 빼고 속성 적용 
+ :link == href 속성이 적용된 태그를 선택, :visited == 방문했던 링크를 가지고 있는 태그를 선택*/
