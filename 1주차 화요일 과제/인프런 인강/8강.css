@@ -1,0 +1,59 @@
+ul > li {
+    font-size:20px;
+    font-weight:bold;
+    color:orange;
+}
+/* 반응선택자, hover 태그 : 해당요소가 차지하는 공간에 마우스를 올리면 상태가 변경됨  */
+li:hover {
+    color:blue;
+}
+/* 상태선택자, 상태에 따라 속성이 변함 */
+input:focus { 
+    border:2px solid #ff0000;
+    padding:10px;
+} 
+/* focus : 커서클릭이 되면 속성이 바뀜 */
+input:enabled {
+    color:#00ff00;
+    font-weight:bold;
+}
+/* enable : 사용할 수 있으면 속성을 바꿈 */
+input:disabled {
+    color:#ff0000;
+}
+
+/* disable : 사용할 수 없으면 속성을 바꿈 */
+
+#content {
+    width:300px;
+}
+
+ul li {
+    list-style:none;
+    border:1px solid #cccccc;
+    padding:10px;
+    background-color:#efefef;
+    font-weight:bold;
+    font-size:20px;
+}
+
+ul li a { 
+    color:#000000;
+}
+/* 형제 관계 중에서 앞에서 수열번째 태그를 선택 */
+ul li:nth-child(2n+1) {
+    background-color:#de9393;
+}
+/* :first-child는 형제관계의 태그(동일위치) 중 맨 앞에 위치하는 태그,
+:last-child는 맨 뒤에있는 태그*/
+ul li:first-child, ul li:last-child {
+    background-color:yellow;
+}
+/* border-radius = 모서리 둥글게, 좌상단부터 시계방향으로 수치를 입력하여 모서리를 둥글게 설정 */
+ul li:first-child {
+    border-radius:10px 10px 0 0;
+}
+
+ul li:last-child {
+    border-radius:0 0 10px 10px;
+}
