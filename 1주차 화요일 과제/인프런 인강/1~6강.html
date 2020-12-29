@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>온라인 프로필</title>
+    <meta charset="utf-8">
+    
+<!-- 인프런 강좌 1~6강의 내용을 학습하며 간단한 자기소개서를 작성했습니다.-->
+<!-- 간단한 css 스타일을 부분 적용하였습니다.-->
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 20px; 
+        }
+        a{
+            text-decoration: none;
+        }
+        *{
+            font-size: 18px;
+        }
+        
+    </style><!-- 6강 tag선택자, *선택자 응용-->
+</head>
+
+<header>
+</header>
+
+<nav>
+</nav>
+
+<body>
+
+    <figure> <!-- figure 및 figurecaption 시맨틱태그-->
+        <img src="image.jpg" width="300" height="300" alt="내 얼굴"> <!-- 3강 이미지 출력태그 -->
+        <figcaption>피로그래밍 14기 김남준입니다.</figcaption>
+    </figure>
+
+    <main>
+        <div>
+            <h1>Namjun Kim</h1><!-- h,p,i,br,mark,ui,li,ol,sup 등 2,3강의 기초 태그 적용-->
+
+            <p>이메일 : wrasf175@gmail.com</p>
+            <a href="http://www.instagram.com/learnupeveryday">인스타그램</a>
+            <br><br>
+        </div>
+        <div>
+            <h2>저는,</h2>
+            <p><b>경희대학교 스페인어학과 4학년 휴학생이고,</b>웹 개발을 공부하고 있습니다.<br>
+                <br> - 큐시즘 22기 8조 최우수상 수상(기획), 강연회 진행팀
+                <br> - 피로그래밍 14기
+                <br> - ISTP</p>
+            <hr>
+        </div>
+
+        <h2>Skills</h2>
+
+        <ul>
+            <li>사용언어</li>
+            <ul>
+                <li><mark>Javascript</mark></li>
+                <li><mark>Python</mark></li>
+            </ul>
+
+
+            <li>
+                사용 툴
+                <ol type='a'>
+                    <li><b>Visual studio code</b></li>
+                    <li>Xcode</li>
+                    <li><b>django</b><sub>예정</sub></li>
+                    <li>react<sup>공부중</sup></li>
+                </ol>
+            </li>
+        </ul>
+    
+        <h2>Academic</h2><!-- 3강 표를 만드는 테이블 태그 응용-->
+        <table style="text-align:center;";>
+            <caption>학력 사항</caption>
+            <thead>
+                <tr>
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>졸업구분</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>경문고등학교</td>
+                    <td>(해당사항 없음)</td>
+                    <td>2012.03~2015.02</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>경희대학교</td>
+                    <td>스페인어학</td>
+                    <td>2015.3~</td>
+                    <td>휴학</td>
+                </tr>
+            </tbody>
+        </table>
+        <table width='300' horder='1' style= 'margin-top:30px;'>
+            <tr>
+                <td>
+                    <h1>My favorite Music</h1><!-- 3강 주간 히트송 예제 응용-->
+                    <hr/>
+                    <ol>
+                        <li><img src="" alt="DPR LIVE-" href="#none">Martini blue</li>
+                        <li><img src="" alt="박재범-" href="#none">All the way up</li>
+                        <li><img src="" alt="릴보이-" href="#none">Credit</li>
+                        <li><img src="" alt="PH-1,루피,키드밀리,팔로알토-" href="#none">Good day</li>
+                        <li><img src="" alt="방탄소년단-" href="#none">Dynamite</li>
+                    </ol>
+                    <p><audio src="" controls='controls' autoplay="autoplay" style='margin-top: 10px;'></audio></p>
+                </td>
+            </tr>
+        </table>
+        <dl><h2>Favorite Food</h2></dl><!-- 태그 중첩-->
+        <dt>한식</dt>
+            <dd>불고기</dd>
+            <dd>김치</dd>
+            <dd>닭갈비</dd>
+
+        <dt>일식</dt>
+            <dd>스시</dd>
+            <dd>돈까스</dd>
+            <dd>우동</dd>
+    <form="#" method="get"> <!-- 4강 - 비디오 태그 ( iframe 태그로 유튜브영상을 따오는 형식으로 대체)--> 
+    <h2>명곡 듣고가세요~ <h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mZInUHwmzN8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </main>
+    <form="#" method="get">
+        <h2>let me know you! </h2><!-- 5강 - 폼태그 --> 
+        이름 : <input type='text' name='Visiter_name' size='5'/><br/>
+        아이디 : <input type='text' name='Visiter_id'size='5'/><br/>
+        인스타그램아이디 : <input type='text' name='Visiter_instagram' size='8'/><br/>
+        연락처 : <input type='text' name='Visiter_call' size='5'/> -
+                <input type='text' name='Visiter_call' size='5'/> -
+                <input type='text' name='Visiter_call' size='5'/><br/>
+        성별구분 : <input type='radio' name='gender' value='m'>남</type>
+                  <input type='radio' name='gender' value='w'>여</type></br>
+        사용언어 : <input type="checkbox" name="language" value="python">파이썬
+                <input type="checkbox" name="language" value="C언어">C언어
+                <input type="checkbox" name="language" value="Java">자바
+                <input type="checkbox" name="language" value="Javascript">자바스크립트</br>
+        자기소개 : <textarea rows = '1' cols = '40'> 간단하게 적어주세요. </textarea></br>
+        국적 : 
+        <select name="nation" size=1>
+            <option>한국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>미국</option>
+            <option>기타</option>
+        </select></br>
+        좋아하는 한국음식 : <select multiple='multiple' name="favorite_Kfood" size=1 >
+            <option>김치</option>
+            <option>불고기</option>
+            <option>파전</option>
+            <option>비빔밥</option>
+            <option>소주</option>
+        </select>
+    </form>
+    <footer style="text-align: center; margin: 30px 0 30px 0;"> <!--5강의 시맨틱태그를 이용한 푸터 구성 -->
+    <form="#" method="get"> <!-- 5강 - 폼태그 --> 
+        <span><span class="blind"></span><a href='https://www.google.com'>구글</href> | </span>
+        <span><span class="blind"></span><a href='https://www.naver.com'>네이버</href> | </span>
+        <span><span class="blind"></span><a href='https://www.facebook.com'>페이스북</href></span>    
+    </footer>
+</body>
+
+</html>
+
