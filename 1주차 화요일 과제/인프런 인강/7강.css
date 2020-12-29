@@ -1,0 +1,81 @@
+#header {
+    width:500px; 
+    background-color:#dd1313; 
+    border:1px solid #808080; 
+    text-align:center; /* 내부 텍스트 중앙 정렬*/
+}
+
+#wrap {
+    width:500px; 
+    background-color :#1e948e; 
+    border:2px solid #808080;
+    text-align:center;
+    overflow:hidden; 
+    /* overflow == hidden: 내용 넘치면 자르기, visible:내용 넘쳐도 그대로, 
+    scroll:스크롤바 표시, auto:내용이 잘리면 스크롤바*/ 
+}
+
+#content {
+    width:350px;
+    border:1px solid red;
+    float:left; /* div 왼쪽 정렬 */
+}
+
+#side_banner {
+    border:1px solid red;
+    float:left;
+}
+
+#footer {
+    clear:both;
+    width:500px; 
+    background-color:#ffd800; 
+    border:3px solid #808080;
+    text-align:center;
+}
+
+ul li.menu {
+    color:#350a5b;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.menu1{
+    color:#1822e2;
+    font-weight:bold;
+}
+.menu1, .menu3, .menu5 {
+    font-size: 20px;
+}
+ /* 속성 선택자 == 태그만 골라서 적용가능 */
+input {
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+/* 태그 안의 특정 타입만 골라서 적용 가능  */
+input[type=text] {
+    color:orange;
+    font-size:20px;
+    width: 100px;
+}
+
+input[type=tel] {
+    color:red;
+}
+
+img[src] {
+    border:5px solid green;
+}
+
+form {
+    text-align: left;
+    margin-left: 10px;
+}
+
+/*  # css 자식선택자 vs 자손선택자 == 자손선택자(한칸 공백) 는 자식, 손자 및 모든 후손을 선택하고, 자식선택자(>)는 직계자손만 선택
+    # css 등위선택자(+, ~) 동등한 위치(들여쓰기)에 있는 선택자. ~은 감싸기, +는 특정 요소만 지정
+   1. #title~div == id가 title인 요소 아래의 모든 div를 선택  
+   2.  h3+div == h3와 동위에 있는 첫번째div를 선택 
+   3. h3~div == h3와 동위에 있는 아래의 모든 div를 선택  
+    # 등위선택자는 잘 사용하면 효율이 좋으나 잘못사용하면 꼬이기 쉬움 */
