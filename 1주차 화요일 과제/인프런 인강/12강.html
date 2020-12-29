@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<!-- 
+    absolute == 부모속성의 좌상단 끝에 고정 
+     fixed:스크롤 이동에 상관없이 좌상단에 고정
+     relative: 인접요소와의 관계에따라 상대적인 위치 조정
+    static: 차곡차곡 쌓임. div의 기본 속성
+    # 상위요소에 포함된 하위 요소의 위치를 조정하기 위해선, 상위 요소의 포지션 속성이 relative여야함.(혼합)
+-->
+    <style>
+        div {
+            width:100px; height:100px;
+            opacity:0.7;
+        }
+
+       div:nth-child(1) {
+           background-color:#ff0000;
+           position:absolute;
+           top:0;
+           left:0;
+       }
+
+       div:nth-child(2) {
+           background-color:#00ff00;
+           position:absolute;
+           top:50px;
+           left:50px;
+       }
+
+       div:nth-child(3) {
+           background-color:#0000ff;
+           position:absolute;
+           top:100px;
+           left:100px;
+       }
+
+       #wrap {
+           width:300px; height:300px;
+           position:fixed;
+           top:300px; left:300px;
+           background-color:yellow;
+           opacity:1.0;
+       }
+
+       #wrap .content {
+           width:100px; height:100px;
+           position:absolute;
+           top:100px; left:100px;
+           background-color:red;
+           opacity:1.0;
+       }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div id="wrap">
+        <div class="content"></div>
+    </div>
+
+</body>
+</html>
