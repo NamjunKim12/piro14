@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OMG</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="margin: 0px">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+      <a class="navbar-brand" href="#">Piro</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#nbvar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nbvar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">INTRO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#highlight">HIGHLIGHT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              data-toggle="modal"
+              href="#md1"
+              style="color: black; text-decoration: none"
+            >
+              ABOUT
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="modal fade"
+      id="md1"
+      tabindex="-1"
+      aria-labelledby="md1label"
+      aria-hidden="ture"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="md1label">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dimiss="modal"
+              aria-label="close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">과연 될 것인가</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid text-center bg-main"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 250px;
+        padding-bottom: 250px;
+        background-color: #fec7d5;
+      "
+    >
+      <p style="color: #ffffff; font-size: 40px; font-weight: 300px">
+        Pirogramming14
+      </p>
+      <p style="color: #ffffff; padding-bottom: 10px; font-size: small">
+        나는 말하는 감자다..
+      </p>
+      <a
+        class="get-start"
+        href="#intro"
+        style="
+          color: #ffffff;
+          padding: 10px;
+          border: 1px solid #ffffff;
+          border-radius: 20px;
+          text-decoration: none;
+        "
+        >Get Started</a
+      >
+    </div>
+    <div
+      class="container-fluid text-center bg-two"
+      id="intro"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #ffffff;
+      "
+    >
+      <p style="color: black; font-size: 40px; font-weight: 300px">
+        과학이란 무엇인가?
+      </p>
+      <p style="color: black; padding-bottom: 10px; font-size: small">
+        과학은 다른 분야의 사상과 아이디어에 어떤 영향을 미쳤는가에 대해<br />
+        개인적인 생각을 얘기해보려고 한다. 이는 본 강연회를 후원하는 존 댄스
+        <br />
+        씨가 꼭 다루어 달라고 각별히 주문한 것이다. 세 부분으로 이루어진 전체
+        <br />
+      </p>
+      <a
+        class="learn-more"
+        href="#highlight"
+        style="
+          color: black;
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 20px;
+          text-decoration: none;
+        "
+        >Learn More</a
+      >
+    </div>
+    <div
+      class="container-fluid bg-three"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #fec7d5;
+      "
+      id="highlight"
+    >
+      <p
+        class="text-center"
+        style="
+          color: #ffffff;
+          font-size: 30px;
+          font-weight: 300px;
+          padding-bottom: 20px;
+        "
+      >
+        지금 먹고 싶은 것들
+      </p>
+      <div class="row">
+        <div class="col-sm text-center">
+          <i class="fas fa-hamburger fa-7x" style="color: #ffffff"></i>
+          <p
+            style="
+              color: white;
+              padding-top: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            햄버거
+          </p>
+          <p style="color: white; padding-bottom: 10px; font-size: small">
+            햄버거는 언제나 맛있다
+          </p>
+        </div>
+        <div class="col-sm text-center">
+          <i class="fas fa-wine-glass-alt fa-7x" style="color: #ffffff"></i>
+          <p
+            style="
+              color: white;
+              padding-top: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            와인
+          </p>
+          <p style="color: white; padding-bottom: 10px; font-size: small">
+            술코딩을 해보고 싶다
+          </p>
+        </div>
+        <div class="col-sm text-center">
+          <i class="fas fa-birthday-cake fa-7x" style="color: #ffffff"></i>
+          <p
+            style="
+              color: white;
+              padding-top: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            케이크
+          </p>
+          <p style="color: white; padding-bottom: 10px; font-size: small">
+            생크림이랑 초코는 필수
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid bg-four"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 100px;
+        padding-bottom: 250px;
+        background-color: #ffffff;
+      "
+      id="gallery"
+    >
+      <div class="row">
+        <div class="col-sm text-center">
+          <img src="https://picsum.photos/seed/picsum/300/200" /><br />
+          <img src="https://picsum.photos/seed/picsum/300/200" />
+        </div>
+        <div class="col-sm text-center">
+          <img src="https://picsum.photos/seed/picsum/300/200" />
+          <br />
+          <img src="https://picsum.photos/seed/picsum/300/200" />
+        </div>
+        <div class="col-sm text-center">
+          <img src="https://picsum.photos/seed/picsum/300/200" />
+          <br />
+          <img src="https://picsum.photos/seed/picsum/300/200" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid text-center bg-five"
+      id="features"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-color: #fec7d5;
+      "
+    >
+      <p style="color: white; font-size: 40px; font-weight: 300px">
+        정말 하나도 모르겠다
+      </p>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <p class="text-left" style="color: white; font-size: 15px">어떡함</p>
+          <p class="text-left" style="color: white; font-size: small">
+            공부할 시간은 없고 구현은 해야되고
+          </p>
+          <p class="text-left" style="color: white; font-size: 15px">어떡함</p>
+          <p
+            class="text-left"
+            style="color: white; padding-bottom: 10px; font-size: small"
+          >
+            <i class="fas fa-wine-bottle fa-3x" style="color: white"></i>
+            공부할 시간은 없고 구현은 해야되고
+            <br />
+          </p>
+          <p class="text-left" style="color: white; font-size: 15px">어떡함</p>
+          <p
+            class="text-left"
+            style="color: white; padding-bottom: 10px; font-size: small"
+          >
+            공부할 시간은 없고 구현은 해야되고
+            <br />
+          </p>
+          <p class="text-left" style="color: white; font-size: 15px">어떡함</p>
+          <p
+            class="text-left"
+            style="color: white; padding-bottom: 10px; font-size: small"
+          >
+            <i class="fas fa-wine-bottle fa-3x" style="color: white"></i>
+            공부할 시간은 없고 구현은 해야되고
+            <br />
+          </p>
+          <p class="text-left" style="color: white; font-size: 15px">어떡함</p>
+          <p
+            class="text-left"
+            style="color: white; padding-bottom: 10px; font-size: small"
+          >
+            공부할 시간은 없고 구현은 해야되고
+            <br />
+          </p>
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+    <div
+      class="container-fluid text-center bg-six"
+      id="contact"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+      "
+    >
+      <p style="color: black; font-size: 30px; font-weight: 300px">
+        Get Started
+      </p>
+      <a
+        class="free-down"
+        href="#"
+        style="
+          background-color: black;
+          color: white;
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 20px;
+          text-decoration: none;
+        "
+        >Free Download</a
+      >
+      <p style="padding-top: 50px; padding-bottom: 0px; color: grey">
+        I like these things
+      </p>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <i class="fas fa-cat fa-4x" style="padding: 20px; color: black"></i
+          ><i class="fas fa-dog fa-4x" style="padding: 20px; color: black"></i>
+          <i
+            class="fas fa-user-friends fa-4x"
+            style="padding: 20px; color: black"
+          ></i>
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+    <div
+      class="container-fluid text-center bg-seven"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        background-color: #fec7d5;
+      "
+    >
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <p style="color: #ffffff; font-size: 30px; font-weight: 300px">
+            Join US
+          </p>
+          <p style="color: #ffffff; padding-bottom: 10px; font-size: small">
+            정말 아무것도 모르겠네.. 내는 것에 의의를 둔다.
+          </p>
+          <form>
+            <div class="form-row" style="padding-bottom: 20px">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="name" />
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="email" />
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="phone" />
+              </div>
+            </div>
+            <div class="form-group" style="padding-bottom: 20px">
+              <textarea
+                class="form-control"
+                placeholder="you message here.."
+                rows="7"
+              ></textarea>
+            </div>
+          </form>
+          <a
+            class="send"
+            href="#"
+            style="
+              color: #ffffff;
+              padding: 10px;
+              padding-right: 100px;
+              padding-left: 100px;
+              border: 1px solid #ffffff;
+              border-radius: 20px;
+              text-decoration: none;
+            "
+            >Send-></a
+          >
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+    <div
+      class="containter-fluid bg-eight"
+      style="
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: white;
+      "
+    >
+      <div class="row">
+        <div class="col-sm text-left" style="padding-left: 30px">
+          <div style="color: black; font-size: 20px">Information</div>
+          <p style="color: grey">
+            apple<br />
+            banana<br />
+            strawberry<br />
+            orange<br />
+          </p>
+        </div>
+        <div class="col-sm text-left" style="padding-left: 30px">
+          <div style="color: black; font-size: 20px">About</div>
+          <p style="color: grey">
+            ooh ahh<br />
+            flame<br />
+            dolphin<br />
+            stealer<br />
+          </p>
+        </div>
+        <div class="col-sm text-left" style="padding-left: 30px">
+          <form>
+            <div class="form-group" style="padding-right: 20px">
+              <label for="search">Stay Posted</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tell us your email"
+              />
+            </div>
+          </form>
+          <a
+            class="subscribe"
+            href="#"
+            style="
+              color: black;
+              padding: 10px;
+              font-size: small;
+              border: 1px solid black;
+              border-radius: 20px;
+              text-decoration: none;
+            "
+            >Subscribe for updates</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
