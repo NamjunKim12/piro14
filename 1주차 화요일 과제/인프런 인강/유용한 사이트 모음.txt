@@ -1,0 +1,27 @@
+1. 폅집 툴
+
+
+- visual studio express 2013 for web : https://www.visualstudio.com/downloads/download-visual-studio-vs
+- notepad++ : http://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ie=utf8&query=notepad%2B%2B
+- editplus (유료)
+- dreamweaver (유료)
+2. 하위 버전 브라우저 테스트 툴
+- download : http://www.my-debugbar.com/wiki/IETester/HomePage
+3. 많은 양의 더미 텍스가 필요한 경우
+- http://lipsum.com
+4. 단위 변환(px, em, %, point)
+- http://pxtoem.com/
+5. 전체적인 레이아웃을 제작할때 필요한 가상의 이미지
+- http://placehold.it/ (ex. http://placehold.it/200x100)
+6. W3C(월드와이드웹 컨소시엄, 활동사항, 기술동향 등의 정보 제공)
+- http://www.w3.org/
+7. 다양한 디바이스 환경에 어울리는 미디어쿼리
+- http://mediaqueri.es/
+8. 웹 접근성 관련
+- http://www.wah.or.kr/ : 웹 접근성과 관련하여 권고되는 사항들의 자료 제공
+9. w3schools
+- www.w3schools.com 
+- HTML 정보 사이트로, HTML, XML, 브라우저, 서버 스크립트에 대한 정보를 제공.
+- 다양한 튜토리얼 문서를 경험 할 수 있음.
+10. 색상 정보 제공
+- http://www.colorpicker.com
