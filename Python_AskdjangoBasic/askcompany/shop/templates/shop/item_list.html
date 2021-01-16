@@ -1,0 +1,25 @@
+<html> 
+    <head>
+        <meta charset='utf-8'>
+        <title>Blog for Ask Company</title>
+    </head>
+    <body>
+        <h1>Ask Company</h1>
+        <form action='' method='GET'>
+            <input type= 'text' name='q' value="{{q}}" />
+            <input type= 'submit' value='search'/>
+        </form>
+
+        <ul>
+            {% for item in item_list %}
+                <li>
+                    {{ item.name }}
+                    {{ item.price }}
+                    {{ item.desc }}
+                <li>
+            {% endfor %}
+        </ul>
+
+    <body>
+</html> 
+
