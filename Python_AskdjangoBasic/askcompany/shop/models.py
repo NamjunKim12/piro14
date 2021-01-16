@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 class Item(models.Model):
     name = models.CharField(max_length=100)
@@ -9,5 +10,10 @@ class Item(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 # Create your models here.
 
+class Post(models.Model):
+    author = models.ForeignJey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    
+    
     def __str__(self):
         return '<{}> {}'.format(self.pk, self.name)
+    
