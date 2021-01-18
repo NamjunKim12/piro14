@@ -1,0 +1,22 @@
+{% extends 'shop/layout.html' %}
+
+{% load humanize %}
+
+{% block content %}
+    <h2>{{ item.name}}</h2>
+
+    {% if item.photo %}
+        <img src= '{{ item.photo.url }}' style='max-width: 100%;'/>
+    {% endif %}
+
+    가격 {{ item.price|intcomma }} 원
+
+    {% if item.desc %}
+        <P>
+            {{ item.desc }}
+        </P>
+    {% endif %}    
+    <hr/> 
+    <a href='/shop'> 목록 </a>
+
+{% endblock %}
