@@ -11,13 +11,16 @@
         <ul>
             {% for item in item_list %}
                 <li>
-                <a href= '/shop/{{item.pk}}/'>
+                <a href= '{{ item.get_absolute_url }}'>
                     {{ item.name }}
+                </a>
                     {{ item.price }}
                     {{ item.desc }}
                 <li>
             {% endfor %}
         </ul>
+        <hr/>
+        <a href='{% url "shop:item_new"%}New Item</a>
 {% endblock %}
 
 

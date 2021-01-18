@@ -17,6 +17,6 @@
         </P>
     {% endif %}    
     <hr/> 
-    <a href='/shop'> 목록 </a>
-
+    <a href='{% url "shop:item_list" %}'> 목록 </a>
+    <a href='{% url "shop:item_edit" item.pk %}'> 목록 </a>
 {% endblock %}
