@@ -2,6 +2,6 @@
 
 {% block content %}
     <h2>{{ user }}'s Profile</h2>
-
-    ...
+    <h3>Bio</h3>
+        {{ user.profile.bio|default:"empty" }}
 {% endblock %}
